@@ -16,6 +16,9 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v6
 
+      - name: ls
+        run: ls
+
       - name: install node.js
         uses: actions/setup-node@v6
         with:
@@ -30,8 +33,11 @@ jobs:
       - name: runs the tests in test directory
         run: npx hardhat test
 
-      - name: test ci validity
-        run: ls
+#  Frontend:
+#    name: Frontend
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name
 
 
 
