@@ -57,6 +57,27 @@ jobs:
           cd frontend
           npm run build
           
+
+  Backend:
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+
+      - name: install node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '>=18.0.0'
+
+      - name: install backend dependencies
+        run: |
+          cd backend
+          npm ci --legacy-peer-deps
+
+      - name: build
+        run: |
+          cd backend
+          npm run build
+
         
         
 
