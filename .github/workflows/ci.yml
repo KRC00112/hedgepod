@@ -30,7 +30,8 @@ jobs:
       - name: runs the tests in test directory
         run: npx hardhat test
 
-
+      - name: test ci validity
+        run: ls
 
 
 
