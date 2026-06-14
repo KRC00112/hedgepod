@@ -42,10 +42,16 @@ jobs:
         with:
           node-version: '>=18.0.0'
 
-      - name: install dependencies
+      - name: install frontend dependencies
         run: |
           cd frontend
           npm ci --legacy-peer-deps
+
+      - name: ls
+        run: ls
+
+
+
         
       
 
