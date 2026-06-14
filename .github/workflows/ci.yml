@@ -81,7 +81,7 @@ jobs:
           if npm run | grep -q "^\s*build"; then
             npm run build
           else
-            echo "No build scripts found, skipping."
+            echo "No build script found, skipping."
           fi
 
         
