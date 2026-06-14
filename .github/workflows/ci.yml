@@ -9,7 +9,8 @@ on:
       - ci-experiment
 
 jobs:
-  smart contracts:
+  contracts:
+    name: Smart contracts
     runs-on: ubuntu-latest
     steps:
       - name: checkout repository
