@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '>=18.0.0'
-          cache: 'npm'
+
 
       - name: install dependencies
         run: npm ci --legacy-peer-deps
@@ -42,7 +42,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '>=18.0.0'
-          cache: 'npm'
+
 
       - name: install frontend dependencies
         run: |
@@ -71,7 +71,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '>=18.0.0'
-          cache: 'npm'
+
 
       - name: install backend dependencies
         run: |
