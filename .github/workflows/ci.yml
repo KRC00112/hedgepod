@@ -9,7 +9,7 @@ on:
       - ci-experiment
 
 jobs:
-  contracts:
+  Contracts:
     name: Smart contracts
     runs-on: ubuntu-latest
     steps:
@@ -59,6 +59,8 @@ jobs:
           
 
   Backend:
+    name: Backend
+    runs-on: ubuntu-latest
     steps:
       - name: checkout repository
         uses: actions/checkout@v6
