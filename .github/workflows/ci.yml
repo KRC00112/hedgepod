@@ -78,7 +78,11 @@ jobs:
       - name: build
         run: |
           cd backend
-          npm run
+          if npm run | grep -q "^\s*build"; then
+            npm run build
+          else
+            echo "No build script found, skipping."
+          fi
 
         
         
