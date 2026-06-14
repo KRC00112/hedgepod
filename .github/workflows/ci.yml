@@ -73,10 +73,10 @@ jobs:
           cd backend
           npm ci --legacy-peer-deps
 
-      - name: build
-        run: |
-          cd backend
-          npm run build
+#      - name: build
+#        run: |
+#          cd backend
+#          npm run build
 
         
         
