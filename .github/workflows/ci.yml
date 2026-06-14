@@ -16,9 +16,6 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v6
 
-      - name: ls
-        run: ls
-
       - name: install node.js
         uses: actions/setup-node@v6
         with:
@@ -33,11 +30,24 @@ jobs:
       - name: runs the tests in test directory
         run: npx hardhat test
 
-#  Frontend:
-#    name: Frontend
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name
+  Frontend:
+    name: Frontend
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+
+      - name: install node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '>=18.0.0'
+
+      - name: install dependencies
+        run: |
+          cd frontend
+          npm ci --legacy-peer-deps
+        
+      
 
 
 
