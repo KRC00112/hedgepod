@@ -46,13 +46,17 @@ jobs:
         run: |
           cd frontend
           npm ci --legacy-peer-deps
-          ls
 
       - name: lint
         run: |
           cd frontend
           npm run lint
-          ls
+
+      - name: build
+        run: |
+          cd frontend
+          npm run build
+          
         
         
 
