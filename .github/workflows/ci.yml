@@ -3,10 +3,10 @@ name: ci
 on:
   push:
     branches:
-      - ci-experiment
+      - proper-versioning
   pull_request:
     branches:
-      - ci-experiment
+      - proper-versioning
 
 jobs:
   Contracts:
